@@ -333,26 +333,6 @@
 
     .project li { margin-bottom: 7px; }
 
-    .result {
-      margin: 16px 0 0;
-      padding: 14px 16px;
-      border-left: 3px solid var(--accent);
-      border-radius: 0 6px 6px 0;
-      background: var(--tint);
-      color: var(--secondary);
-      font-size: 14px;
-    }
-
-    .result strong { color: var(--text); }
-
-    .result small {
-      display: block;
-      margin-top: 5px;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.7;
-    }
-
     .skills { margin: 0; }
 
     .skill-row {
@@ -740,48 +720,22 @@
           <span class="badge">진행 중</span>
         </div>
 
-        <h3>HERI-RAG — 국가유산 전문 질의응답 시스템</h3>
+        <h3>국가유산 전문 질의응답 시스템 개발</h3>
 
         <p class="project-period">
           <time datetime="2026-03">2026.03</time> – 현재
-          · <time datetime="2027-02">2027.02</time>까지 참여 예정
         </p>
 
         <p class="project-summary">
-          한국 전통건축·국가유산 문서를 기반으로 원문 근거와 출처를
-          제공하는 질의응답 시스템을 개발하고 있습니다.
-          데이터 구축부터 모델 학습·평가, 웹 데모 구현까지 전 과정을 담당했습니다.
+          전통건축 및 국가유산 자료를 활용한 검색 증강 생성(RAG)
+          기반 질의응답 시스템 개발
         </p>
 
         <ul>
-          <li>
-            레이아웃 분석, OCR, 선택적 VLM 보정을 결합한
-            문서 전처리 파이프라인 구축
-          </li>
-          <li>
-            원문 근거와 출처를 연결한 QA 2,754건 및
-            검색용 문단 3,288개 구축
-          </li>
-          <li>
-            BM25·임베딩 기반 하이브리드 검색, 재정렬 모델,
-            검색 근거를 활용하는 생성 모델 학습 및 비교 평가
-          </li>
-          <li>
-            답변과 원문 출처 확인, 근거 부족 시 답변 보류 기능을
-            포함한 웹 데모·API 구현
-          </li>
+          <li>전문 문서 전처리 및 학습·평가 데이터 구축</li>
+          <li>도메인 특화 언어 모델 학습과 검색·답변 성능 개선</li>
+          <li>원문 근거와 출처를 제공하는 질의응답 웹 데모 구현</li>
         </ul>
-
-        <div class="result">
-          <strong>
-            답변 가능 문항의 완전정답률 74.1% → 78.9%
-          </strong><br>
-          근거 밖 주장률 21.1% → 17.6%
-          <small>
-            내부 LLM 자동 평가의 답변 가능 398문항 기준.
-            Base RAG와 Noisy Evidence-SFT + RAG 비교 결과.
-          </small>
-        </div>
       </article>
 
       <article class="project">
@@ -790,49 +744,22 @@
           <span class="badge">진행 중</span>
         </div>
 
-        <h3>편향 완화를 위한 이력서–채용공고 매칭 모델</h3>
+        <h3>공정성을 고려한 채용 매칭 모델 개발</h3>
 
         <p class="project-period">
           <time datetime="2025-09">2025.09</time> – 현재
-          · <time datetime="2026-12">2026.12</time>까지 참여 예정
         </p>
 
         <p class="project-summary">
-          이력서와 채용공고의 매칭을 예측하고,
-          민감속성 변화에 따른 예측 변동을 줄이는 모델을 개발했습니다.
-          데이터 전처리·모델 학습·평가 전반을 담당했으며,
-          특히 편향 완화 방법의 설계와 구현에 집중했습니다.
+          지원자와 채용공고의 적합도를 예측하고,
+          민감정보에 따른 편향을 완화하는 AI 모델 개발
         </p>
 
         <ul>
-          <li>
-            채용 데이터 전처리 및 양성·음성 쌍
-            525,448건으로 학습·평가 데이터 구성
-          </li>
-          <li>
-            한국어 임베딩 모델 KURE와 MLP 기반
-            이력서–채용공고 매칭 예측 모델 구현
-          </li>
-          <li>
-            주요 예측 정보를 보존하면서 분류기를 수정하는
-            Null-space 기반 편향 완화 방법 적용
-          </li>
-          <li>
-            실험용 성별 속성 변경 전후의 예측 안정성을 평가하여
-            매칭 정확도와 공정성을 함께 검증
-          </li>
+          <li>이력서·채용공고 데이터 전처리 및 매칭 모델 학습</li>
+          <li>예측 성능을 보존하면서 편향을 줄이는 방법 연구·구현</li>
+          <li>모델 정확도 및 민감속성 변화에 대한 예측 일관성 평가</li>
         </ul>
-
-        <div class="result">
-          <strong>
-            매칭 정확도 92.5% · 개인공정성 지표 99.5%
-          </strong>
-          <small>
-            과제 발표자료의 실증 결과 기준.
-            공정성은 실제 성별 대신 부여한 실험용 속성의 변화에 대한
-            예측 안정성으로 평가.
-          </small>
-        </div>
       </article>
 
       <article class="project">
@@ -841,32 +768,22 @@
           <span class="badge">진행 중</span>
         </div>
 
-        <h3>피부 분석 및 시술 변화 시각화를 위한 AI 연구</h3>
+        <h3>피부 분석 및 시술 변화 시각화 연구</h3>
 
         <p class="project-period">
           <time datetime="2026-09">2026.09</time> – 현재
-          · <time datetime="2027-02">2027.02</time>까지 참여 예정
         </p>
 
         <p class="project-summary">
-          얼굴 이미지 기반 피부 상태 분석과 개인별 시술 계획,
-          시술 후 예상 변화 시각화를 연계하는 피부과 협력 연구에
-          참여하고 있습니다.
+          얼굴 이미지 분석과 생성형 AI를 활용한
+          피부과 진료 지원 기술 연구 참여
         </p>
 
         <ul>
           <li>
-            얼굴 부위별 피부 상태 분석·점수화와
-            맞춤형 시술 계획 지원을 위한 AI 활용 연구
+            피부 상태 분석 및 개인 맞춤형 시술 지원을 위한 AI 활용 검토
           </li>
-          <li>
-            조건부 이미지 생성을 활용한 시술 후 예상 변화
-            시각화 방법 검토
-          </li>
-          <li>
-            얼굴 구조와 개인 특성을 보존하는 이미지 변환 기술의
-            피부과 도메인 적용 가능성 탐색
-          </li>
+          <li>조건부 이미지 생성 기반 시술 후 예상 변화 시각화 연구</li>
         </ul>
       </article>
     </section>
