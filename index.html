@@ -64,14 +64,15 @@
     }
 
     .avatar {
-      display: grid;
-      place-items: center;
+      display: block;
       flex-shrink: 0;
       width: 148px;
       height: 148px;
       border: 2px solid var(--accent);
       border-radius: 50%;
       background: #fff;
+      object-fit: cover;
+      object-position: center;
       box-shadow: 0 0 0 7px var(--tint);
       color: var(--accent);
       font-size: 40px;
@@ -442,7 +443,7 @@
 <body>
   <main>
     <header class="profile">
-      <div class="avatar" aria-hidden="true">JH</div>
+      <img class="avatar" src="profile.jpg" alt="한재호 프로필 사진">
 
       <div>
         <h1>한재호 <span lang="en">Jaeho Han</span></h1>
