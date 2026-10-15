@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>한재호 | 이력서 및 연구 포트폴리오</title>
   <meta name="description"
-        content="중앙대학교 AI학과 석사과정 한재호의 학력, 논문, 연구 프로젝트 및 기술 역량">
+        content="중앙대학교 AI학과 석사과정 한재호의 이력서 및 연구 포트폴리오. 시각·언어 모델, LLM, 도메인 특화 RAG 연구 및 개발 경험.">
 
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
@@ -63,6 +63,8 @@
       gap: 36px;
     }
 
+    .profile-info { min-width: 0; }
+
     .avatar {
       display: block;
       flex-shrink: 0;
@@ -108,12 +110,22 @@
       font-size: 14px;
     }
 
+    .contact {
+      margin: 12px 0 0;
+      font-size: 14px;
+    }
+
+    .contact-label {
+      margin-right: 8px;
+      color: var(--muted);
+    }
+
     .links {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       gap: 10px 20px;
-      margin-top: 18px;
+      margin-top: 12px;
       font-size: 14px;
     }
 
@@ -157,6 +169,11 @@
     .intro {
       color: var(--secondary);
       line-height: 1.95;
+    }
+
+    .intro strong {
+      color: var(--text);
+      font-weight: 600;
     }
 
     .interest-list {
@@ -445,11 +462,16 @@
     <header class="profile">
       <img class="avatar" src="profile.jpg" alt="한재호 프로필 사진">
 
-      <div>
+      <div class="profile-info">
         <h1>한재호 <span lang="en">Jaeho Han</span></h1>
         <p class="role">중앙대학교 AI학과 석사과정</p>
         <p class="lab">
           지능형 멀티모달 추론 연구실 · IMR Lab.
+        </p>
+
+        <p class="contact">
+          <span class="contact-label">이메일</span>
+          <a href="mailto:wogh0721@naver.com">wogh0721@naver.com</a>
         </p>
 
         <div class="links">
@@ -479,13 +501,19 @@
 
       <div class="intro">
         <p>
-          중앙대학교 AI학과 석사과정에 재학 중인 한재호입니다.
-          지능형 멀티모달 추론 연구실
-          (Intelligent Multimodal Reasoning Lab.)에서 연구하고 있습니다.
+          시각·언어 모델과 대규모 언어 모델을 연구하는
+          중앙대학교 AI학과 석사과정 한재호입니다.
+          지능형 멀티모달 추론 연구실(IMR Lab.)에 소속되어 있으며,
+          <strong>2027년 2월 졸업 예정</strong>입니다.
         </p>
         <p>
-          멀티모달 대규모 언어 모델(MLLM), 추론 경량화 및 효율화,
-          대규모 언어 모델(LLM)에 관심을 두고 있습니다.
+          <strong>ACL 2026 Main 제1저자 연구</strong>에서
+          CLIP의 편향 완화와 제로샷 성능 개선을 위한
+          테스트 시점 적응 방법을 제안했습니다.
+          시각·언어 모델의 신뢰성 평가와 의료 도메인 언어 모델 연구에도
+          참여했으며, 현재
+          <strong>국가유산 분야의 RAG 기반 질의응답 시스템 개발</strong>에
+          참여하고 있습니다.
         </p>
       </div>
     </section>
